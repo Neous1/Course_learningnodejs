@@ -1,3 +1,6 @@
+// app.js needs a module
+require("./greet.js")
+
 // var a = 1;
 // var b = 3; 
 // var c = a + b;
