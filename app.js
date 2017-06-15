@@ -1,4 +1,7 @@
-//module greet is now available to app.js
-var greet  = require("./greet")
+function Person(firstname, lastname){
+    this.firstname = firstname;
+    this.lastname = lastname;
+}
 
-greet();
+var Peter = new Person("john","Doe");
+console.log(Peter.firstname)
