@@ -1,5 +1,6 @@
 var greet = function (){
-    console.log("hi from greet.js")
+    console.log("hi from exported greet.js")
 };
-// invoke the greet function
-greet()
+
+// make greet() available 
+module.exports = greet;
