@@ -1,18 +1,18 @@
-function Person(firstname, lastname){
-    this.firstname = firstname;
-    this.lastname = lastname;
+//pass by value
+function change (b){
+    console.log(b)
+    b=2
 }
+var a =1;
+change(a); // when a gets passed to change(), b become a and be gets assigned the value of a 
+console.log(a);
 
-Person.prototype.greet = function(){
-    console.log("Hello , " + this.firstname + " " + this.lastname);
-};
-
-var john = new Person("john","Doe");
-john.greet();
-
-var jane = new Person('Jane', 'Doe')
-jane.greet()
-
-console.log(john.__proto__);
-console.log(jane.__proto__);
-console.log(john.__proto__ ===jane.__proto__);
+// pass by reference
+function changeObj(d){
+    d.prop1 = function(){};
+    d.prop2 = {};
+}
+var  c = {};
+c.prop1 = {};
+changeObj(c);
+console.log(c);
