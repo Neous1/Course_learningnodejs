@@ -8,27 +8,27 @@ require("./greet.js")
 // console.log(c);
 
 
-// function statement
-function greet(){
-    console.log("hi");
-}
-greet();
+// // function statement
+// function greet(){
+//     console.log("hi");
+// }
+// greet();
 
-function logGreeting(fn){
-    fn();
-}
-logGreeting(greet);
+// function logGreeting(fn){
+//     fn();
+// }
+// logGreeting(greet);
 
-//function expression
-var greetMe = function(){
-    console.log("Hi Yvon");
-}
-greetMe();
+// //function expression
+// var greetMe = function(){
+//     console.log("Hi Yvon");
+// }
+// greetMe();
 
-// it's first-class
-logGreeting(greetMe);
+// // it's first-class
+// logGreeting(greetMe);
 
-//use a function expression to create a function on the fly
-logGreeting(function(){
-    console.log("Hello Yvon")
-})
+// //use a function expression to create a function on the fly
+// logGreeting(function(){
+//     console.log("Hello Yvon")
+// })
