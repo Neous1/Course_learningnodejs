@@ -1,5 +1,27 @@
-var util = require("util");// no "./" becuase it's a core module which doesn't reside in our directry
+//object properties and methods
+var obj ={
+    greet: "Hello"
+}
 
-var name = "Yvon";
-var greeting = util.format("Hello, %s", name);
-util.log(greeting); // util.log add a time stamp to our log
+console.log("obj.greet is",obj.greet);
+console.log('obj["greet"] is ', obj["greet"]);
+var prop ='greet';
+console.log('obj[prop] is ', obj[prop])
+// functions and arrays
+var arr = [];
+
+arr.push(function(){
+    console.log("Hello 1");
+});
+arr.push(function(){
+    console.log("Hello 2");
+});
+
+arr.push(function(){
+    console.log("Hello 3");
+});
+
+arr.forEach(function(item){
+    item();
+});
+
