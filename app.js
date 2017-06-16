@@ -1,19 +1,5 @@
-var greet = require("./greet1");
-greet();
+var util = require("util");// no "./" becuase it's a core module which doesn't reside in our directry
 
-var greet2 = require("./greet2").greet;
-greet2()
-
-var greet3 = require ("./greet3")
-greet3.greet()
-greet3.greeting = "Changed hello from greet 3"
-
-var greet3b = require("./greet3");
-greet3b.greet();
-
-var Greet4 = require("./greet4"); // greet4 is now a constructor function
-var grtr = new Greet4() 
-grtr.greet();
-
-var greet5 = require("./greet5").greet;
-greet5();
+var name = "Yvon";
+var greeting = util.format("Hello, %s", name);
+util.log(greeting); // util.log add a time stamp to our log
